@@ -1,3 +1,8 @@
-facA n = if (n >= 2) then (*) n  (facA ((-) n 1)) else 1
+facA n = if (n >= 2) 
+	then (*) n  (facA ((-) n 1)) 
+	else 1
+
 facB 0 = 1
 facB n = (n * (facB (n - 1))) 
+
+facC n = product [1..n]
